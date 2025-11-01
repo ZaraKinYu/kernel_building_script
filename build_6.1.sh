@@ -84,7 +84,7 @@ export BUILD_OPTIONS=(
 
 build_kernel(){
     # Make default configuration.
-    make "${BUILD_OPTIONS[@]}" gki_defconfig
+    make "${BUILD_OPTIONS[@]}" warm-ZaraKinYu_defconfig
 
     # Build the kernel
     make "${BUILD_OPTIONS[@]}" Image || exit 1
