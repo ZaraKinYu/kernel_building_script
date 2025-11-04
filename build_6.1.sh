@@ -84,7 +84,7 @@ export BUILD_OPTIONS=(
 
 build_kernel(){
     # Make default configuration.
-    make "${BUILD_OPTIONS[@]}" gki_defconfig pitti_GKI.config warm_GKI.config warm_consolidate.config
+    make "${BUILD_OPTIONS[@]}" gki_defconfig pitti_GKI.config warm_GKI.config warm_consolidate.config pitti_consolidate.config
 
     # Build the kernel
     make "${BUILD_OPTIONS[@]}" Image || exit 1
